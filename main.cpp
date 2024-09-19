@@ -5,10 +5,10 @@ using namespace std ;
 class Entity {
 public:
     string m_name;
-    void setName(string name) {
+    void setName (const string_view name) {
         m_name = name;
     }
-    string getName() const {
+    string& getName() {
         return m_name;
     }
 };
@@ -16,7 +16,7 @@ public:
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    Entity e = Entity();
+    auto e = Entity();
     e.setName("shanghai");
     cout << e.getName() << std::endl;
     return 0;
