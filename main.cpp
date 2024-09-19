@@ -19,6 +19,5 @@ int main() {
     auto e = Entity();
     e.setName("shanghai");
     cout << e.getName() << std::endl;
-    cout << "test" << endl;
     return 0;
 }
